@@ -2,6 +2,7 @@ var Doctors = require('./../js/doctor-lookup.js').getDoctors;
 
 function displayDoctors(doctors) {
   $('.showDoctors').text(function() {
+    $('.showDoctors').append("<h3>These doctors might be able to help you with your issue</h3><br>");
     doctors.forEach(function(doctor) {
       $('.showDoctors').append(doctor.name + "<br>");
     });
