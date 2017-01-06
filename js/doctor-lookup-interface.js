@@ -14,6 +14,5 @@ $(document).ready(function() {
   $('#medicalIssue').click(function() {
     var medicalIssue = $('#issue').val();
     var doctors = new Array(Doctors(medicalIssue, displayDoctors));
-    console.log("Front end:" + doctors);
   });
 });

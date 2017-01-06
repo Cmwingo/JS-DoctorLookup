@@ -34,7 +34,7 @@ gulp.task('jsBrowserify', ['concatInterface'], function() {
   .pipe(source('app.js'))
   .pipe(gulp.dest('./build/js'))
 });
-// Warning- single' may break gulpfile.js minification
+
 gulp.task('minifyScripts', ['jsBrowserify'], function() {
   return gulp.src('./build/js/app.js')
   .pipe(uglify())

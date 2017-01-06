@@ -12,8 +12,6 @@ exports.getDoctors = function(medicalIssue, displayFunction) {
         doctors[i] = new Doctor(dataObject.practices[0].name);
       });
       displayFunction(doctors);
-      console.log(result);
-      console.log(doctors[0].name);
       return result;
     })
    .fail(function(error){
