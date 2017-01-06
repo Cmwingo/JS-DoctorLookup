@@ -17,7 +17,7 @@ exports.getDoctors = function(medicalIssue, displayFunction) {
       return result;
     })
    .fail(function(error){
-      console.log("fail");
+      $('.showDoctors').text("We're sorry, but no doctors were found relating to that medical issue")
       return error;
     });
 };
